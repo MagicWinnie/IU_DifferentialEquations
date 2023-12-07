@@ -170,7 +170,7 @@ void task_7(int n, bool print_solution = true)
     }
 }
 
-// Blobal errors of the Euler's solution
+// Global errors of the Euler's solution
 void task_8(int n1, int n2)
 {
     vector<double> GE(n2 - n1 + 1);
@@ -194,7 +194,7 @@ void task_8(int n1, int n2)
     print_array("Euler_GE(n)", GE);
 }
 
-// Blobal errors of the improved Euler's solution
+// Global errors of the improved Euler's solution
 void task_9(int n1, int n2)
 {
     vector<double> GE(n2 - n1 + 1);
@@ -218,7 +218,7 @@ void task_9(int n1, int n2)
     print_array("iEuler_GE(n)", GE);
 }
 
-// Blobal errors of the Runge-Kutta solution
+// Global errors of the Runge-Kutta solution
 void task_10(int n1, int n2)
 {
     vector<double> GE(n2 - n1 + 1);
