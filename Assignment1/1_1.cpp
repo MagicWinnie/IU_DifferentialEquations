@@ -3,8 +3,8 @@
 #include <vector>
 #include <iomanip>
 #include <string>
-#define y(x, _x0, _y0) (sin(x))
-#define f(x, y) (cos(x))
+#define y(_x, _x0, _y0) (sin(_x))
+#define f(_x, _y) (cos(_x))
 
 const double _x0 = 0;
 const double _y0 = 0;
