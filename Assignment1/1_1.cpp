@@ -84,7 +84,7 @@ vector<double> task_3(int n, bool print_solution = true)
     for (int i = 1; i < n; i++)
     {
         double K_1i = f(xi[i - 1], yi[i - 1]);
-        double K_2i = f(xi[i - 1] + h, y[i - 1] + h * K_1i);
+        double K_2i = f(xi[i - 1] + h, yi[i - 1] + h * K_1i);
         yi[i] = yi[i - 1] + h / 2 * (K_1i + K_2i);
     }
 
@@ -108,9 +108,9 @@ vector<double> task_4(int n, bool print_solution = true)
     for (int i = 1; i < n; i++)
     {
         double K_1i = f(xi[i - 1], yi[i - 1]);
-        double K_2i = f(xi[i - 1] + h / 2, y[i - 1] + h / 2 * K_1i);
-        double K_3i = f(xi[i - 1] + h / 2, y[i - 1] + h / 2 * K_2i);
-        double K_4i = f(xi[i - 1] + h, y[i - 1] + h * K_3i);
+        double K_2i = f(xi[i - 1] + h / 2, yi[i - 1] + h / 2 * K_1i);
+        double K_3i = f(xi[i - 1] + h / 2, yi[i - 1] + h / 2 * K_2i);
+        double K_4i = f(xi[i - 1] + h, yi[i - 1] + h * K_3i);
         yi[i] = yi[i - 1] + h / 6 * (K_1i + 2 * K_2i + 2 * K_3i + K_4i);
     }
 
