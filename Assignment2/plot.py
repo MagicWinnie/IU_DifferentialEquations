@@ -7,7 +7,7 @@ plt.figure(figsize=(10, 6))
 for i, solution in enumerate(("Euler's", "Improved Euler's", "Runge-Kutta")):
     process = sp.Popen(["./2_2.out"], stdin=sp.PIPE, stdout=sp.PIPE)
 
-    output, _ = process.communicate(f"20 {1 + i}".encode())
+    output, _ = process.communicate(f"90 {1 + i}".encode())
     output = output.decode().strip()
 
     _, _, _, x_str, _, y_str = output.split("\n")
