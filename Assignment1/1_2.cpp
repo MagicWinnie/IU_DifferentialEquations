@@ -3,8 +3,8 @@
 #include <vector>
 #include <iomanip>
 #include <string>
-#define y(_x, _x0, _y0) (_x * _x * _x * _x)
-#define f(_x, _y) (2 * _x * _x * _x + 2 * _y / _x)
+#define y(_x, _x0, _y0) ((_x) * (_x) * (_x) * (_x))
+#define f(_x, _y) (2 * (_x) * (_x) * (_x) + 2 * (_y) / (_x))
 
 const double _x0 = 1;
 const double _y0 = 1;
